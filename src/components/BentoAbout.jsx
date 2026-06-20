@@ -123,7 +123,7 @@ export default function BentoAbout() {
 
               <div className="py-4 md:py-0 md:pl-6">
                 <InfoBlock label="GitHub" value="tusharsingh3" />
-                <InfoBlock className="mt-5" label="Currently" value="CoolR + Volza" />
+                <InfoBlock className="mt-5" label="Currently" value="CoolR + npm packages" />
               </div>
             </div>
           </BentoCard>

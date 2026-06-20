@@ -9,7 +9,7 @@ const TIMELINE = [
     org: "AI SaaS Platform",
     desc:
       "Currently working on CoolR, an AI-powered retail intelligence platform that turns cooler and freezer images into commercial insight.",
-    tags: ["React.js", "Node.js", "MongoDB", "AI/ML", "Cloud"],
+    tags: ["React.js", "Node.js", "MSSQL", "ElasticSearch", "Cloud"],
     accent: "hsl(271 81% 66%)",
     link: PROFILE.links.coolr,
   },
@@ -42,7 +42,7 @@ const TIMELINE = [
     org: "Trade Intelligence",
     desc:
       "Worked on Volza from 2020 to 2023, building global export-import trade data and analytics experiences.",
-    tags: ["React.js", "Node.js", "MSSQL", "REST APIs", "Data Viz"],
+    tags: ["React.js", "Node.js", "MSSQL", "ElasticSearch", "REST APIs", "Data Viz"],
     accent: "hsl(217 91% 60%)",
     link: PROFILE.links.volza,
   },
