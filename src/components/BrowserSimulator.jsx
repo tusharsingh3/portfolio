@@ -6,7 +6,7 @@ export default function BrowserSimulator({ url, title, accent, link }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="block"
+      className="inline-block"
     >
     <motion.div
       initial={{ opacity: 0, y: 12 }}

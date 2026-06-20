@@ -110,7 +110,7 @@ export default function RadialTimeline() {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="type-header text-xl mb-2 group-hover:text-accent/90 transition-colors duration-300 block"
+                    className="type-header text-xl mb-2 group-hover:text-accent/90 transition-colors duration-300 inline-block"
                   >
                     {item.title} <span className="type-meta text-sm">↗</span>
                   </a>

@@ -6,7 +6,8 @@ export const PROFILE = {
   availability: "Focused on product work and long-term engineering builds",
   summary:
     "I build product-focused web apps, browser extensions, and internal tooling with React, Node.js, MSSQL, and MongoDB.",
-  photo: "/tushar-portrait.png",
+  photo: "/tushar-portrait.webp",
+  photoFallback: "/tushar-portrait.png",
   links: {
     github: "https://github.com/tusharsingh3",
     npm: "https://www.npmjs.com/~tushar89",

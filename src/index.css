@@ -44,9 +44,6 @@
   }
 
   @media (hover: hover) and (pointer: fine) {
-    html {
-      cursor: none;
-    }
     a, button, [role="button"] {
       cursor: var(--cursor-pointer, pointer) !important;
     }

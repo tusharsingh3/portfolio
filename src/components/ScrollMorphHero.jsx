@@ -172,16 +172,23 @@ export default function ScrollMorphHero() {
               style={{ background: spotlight }}
             />
             <div className="aspect-[4/5] overflow-hidden">
-              <motion.img
-                src={PROFILE.photo}
-                alt="Tushar Singh"
-                className="h-full w-full object-cover object-top"
-                style={{ y: 0 }}
-                transition={{ type: "spring", stiffness: 180, damping: 20, mass: 0.6 }}
-                onError={(e) => {
-                  e.currentTarget.style.display = "none";
-                }}
-              />
+              <picture>
+                <source srcSet={PROFILE.photo} type="image/webp" />
+                <motion.img
+                  src={PROFILE.photoFallback}
+                  alt="Tushar Singh — Full-Stack Developer"
+                  width={1024}
+                  height={1536}
+                  loading="eager"
+                  fetchPriority="high"
+                  className="h-full w-full object-cover object-top"
+                  style={{ y: 0 }}
+                  transition={{ type: "spring", stiffness: 180, damping: 20, mass: 0.6 }}
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
+                />
+              </picture>
             </div>
 
             <motion.div
