@@ -22,17 +22,53 @@ export default function TubelightNavbar({ theme, onToggleTheme }) {
   }, []);
 
   useEffect(() => {
-    const sections = NAV_ITEMS.map(i => document.getElementById(i.href));
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) setActive(e.target.id);
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            setActive(e.target.id);
+          }
         });
       },
       { threshold: 0.3, rootMargin: "-60px 0px -40% 0px" }
     );
-    sections.forEach(s => s && observer.observe(s));
-    return () => observer.disconnect();
+
+    const observed = new Set();
+    let mutationObserver = null;
+
+    const checkAndObserve = () => {
+      NAV_ITEMS.forEach((item) => {
+        const el = document.getElementById(item.href);
+        if (el && !observed.has(el)) {
+          observer.observe(el);
+          observed.add(el);
+        }
+      });
+
+      if (observed.size === NAV_ITEMS.length && mutationObserver) {
+        mutationObserver.disconnect();
+      }
+    };
+
+    // Initial check (handles static components)
+    checkAndObserve();
+
+    if (observed.size < NAV_ITEMS.length) {
+      mutationObserver = new MutationObserver(() => {
+        checkAndObserve();
+      });
+      mutationObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    return () => {
+      observer.disconnect();
+      if (mutationObserver) {
+        mutationObserver.disconnect();
+      }
+    };
   }, []);
 
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
