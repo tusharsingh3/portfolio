@@ -73,8 +73,9 @@ export default function BentoAbout() {
               <span className="text-foreground">Volza</span> on global trade data experiences.
             </p>
             <p className="type-text mb-4">
-              On the open-source side: <span className="text-foreground">nexbase-ui</span> and{" "}
-              <span className="text-foreground">nexbase</span>, both published under my npm profile
+              On the open-source side: <span className="text-foreground">nexbase-ui</span>,{" "}
+              <span className="text-foreground">nexbase</span>, and{" "}
+              <span className="text-foreground">nexlogger</span>, all published under my npm profile
               <span className="text-foreground"> @tushar89</span>.
             </p>
             <p className="type-text">
@@ -113,7 +114,7 @@ export default function BentoAbout() {
               <div className="py-4 md:py-0 md:pr-6">
                 <InfoBlock label="Role" value="Full-Stack Developer" />
                 <InfoBlock className="mt-5" label="npm" value="@tushar89" />
-                <InfoBlock className="mt-5" label="OSS" value="nexbase-ui · nexbase" />
+                <InfoBlock className="mt-5" label="OSS" value="nexbase-ui · nexbase · nexlogger" />
               </div>
 
               <div className="py-4 md:py-0 md:px-6">

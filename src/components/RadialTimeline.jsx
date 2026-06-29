@@ -30,7 +30,7 @@ const TIMELINE = [
     title: "npm packages",
     org: "@tushar89",
     desc:
-      "Published and refined npm packages like nexbase-ui and nexbase under my npm profile.",
+      "Published and refined npm packages like nexbase-ui, nexbase, and nexlogger under my npm profile.",
     tags: ["React.js", "TypeScript", "npm", "Open Source"],
     accent: "hsl(142 71% 45%)",
     link: PROFILE.links.npmSettings,
