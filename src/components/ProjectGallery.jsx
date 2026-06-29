@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import BrowserSimulator from "./BrowserSimulator";
+
 import { PROJECTS } from "../data/profile";
 import CursorSpotlight from "./CursorSpotlight";
 
@@ -110,7 +110,7 @@ export default function ProjectGallery() {
                               </motion.span>
                             ))}
                           </div>
-                          <BrowserSimulator url={p.url} title={p.title} accent={p.accent} link={p.link} />
+
                         </motion.div>
                       )}
                     </AnimatePresence>
