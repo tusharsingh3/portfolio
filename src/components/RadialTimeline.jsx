@@ -14,6 +14,17 @@ const TIMELINE = [
     link: PROFILE.links.coolr,
   },
   {
+    period: "July 2026",
+    year: "2026",
+    title: "Virinchhi Architects",
+    org: "Business Website",
+    desc:
+      "Shipped a client website for an architecture firm, with a custom brand theme and project showcase, live in production.",
+    tags: ["React.js", "TypeScript", "Vite", "Tailwind CSS"],
+    accent: "hsl(14 80% 50%)",
+    link: PROFILE.links.virinchhi,
+  },
+  {
     period: "2025",
     year: "2025",
     title: "AI Usage Tracker",
