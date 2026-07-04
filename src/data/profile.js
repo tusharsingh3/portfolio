@@ -16,6 +16,7 @@ export const PROFILE = {
       "https://chromewebstore.google.com/detail/ai-usage-tracker/pkklbaifhmpmcecpfofhpbgldlnpfknm?utm_source=item-share-cb",
     coolr: "https://www.coolr.ai/",
     volza: "https://www.volza.com/",
+    virinchhi: "https://www.virinchhiarchitects.com/",
   },
   featuredTech: [
     "React.js",
@@ -29,7 +30,7 @@ export const PROFILE = {
 
 export const STATS = [
   { n: 5, suf: "+", label: "Years experience", scrollTo: "work" },
-  { n: 6, suf: "", label: "Featured projects", scrollTo: "work" },
+  { n: 7, suf: "", label: "Featured projects", scrollTo: "work" },
   { n: 3, suf: "", label: "npm packages", scrollTo: "project-4" },
   { n: 1, suf: "", label: "Chrome extension", scrollTo: "project-3" },
 ];
@@ -121,6 +122,20 @@ export const PROJECTS = [
 
     link: PROFILE.links.npmSettings,
     customers: "Open source package on npm",
+  },
+  {
+    id: 7,
+    n: "07",
+    title: "Virinchhi Architects",
+    cat: "Business Website",
+    year: "2026",
+    desc:
+      "Client website for an architecture firm, built with a custom brand theme and project showcase. Live in production.",
+    stack: ["React.js", "TypeScript", "Vite", "Tailwind CSS"],
+    color: "from-orange-500/10 to-red-500/5",
+    accent: "text-orange-400",
+    link: PROFILE.links.virinchhi,
+    customers: "Live client website",
   },
 ];
 
