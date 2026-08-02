@@ -1,20 +1,14 @@
 {
-  "name": "Tushar Singh — Portfolio",
+  "name": "Tushar Singh — Full-Stack Developer",
   "short_name": "Tushar Singh",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#0a0c14",
-  "theme_color": "#7c3aed",
   "icons": [
     {
       "src": "/favicon-192.png",
       "sizes": "192x192",
       "type": "image/png"
-    },
-    {
-      "src": "/favicon-32.png",
-      "sizes": "32x32",
-      "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#7c3aed",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }
